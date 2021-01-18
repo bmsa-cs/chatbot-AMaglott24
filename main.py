@@ -1,7 +1,7 @@
 """
 Chatbot
-Author: 
-Period/Core: 
+Author: Alexander Maglott
+Period/Core: 6
 
 """
 
@@ -32,3 +32,23 @@ if __name__ == "__main__":
   t = input("Run pytest? (y/n)").lower()
   if t == 'y':
     run_tests()
+
+  """
+  Question ideas:
+  Introduction:
+    - What is your name?
+    - What is your prefered gender?
+    - What is your age?
+  Discussion:
+    - How are you?
+    - Are there any TV Shows you have been enjoying lately?
+      - Answers: "Awesome! I have been enjoying (insert show)!" or "That's cool, I've been enjoying that too!"
+    - Do you have a favorite character from that show?
+      - Answers: "That is a cool character." or "Its always good to like many characters."
+    - What is your favorite movie?
+      -"I've never seen that before.""
+      Why did you like that movie?
+      -"Those are some good reasons, maybe I will go and watch it" or "I probably won't watch that, it doesn't seem like my kind of movie." or "That sounds like a must see!"
+  Conclusion:
+    "Well, it was nice talking, (Name)! I'm going to go watch that movie." or "It was nice talking, (Name)! I have to go now though. Have a nice day!"
+  """
