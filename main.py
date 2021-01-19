@@ -26,6 +26,7 @@ def main():
   
   print("Hello! I am Chadbot, a chatbot for short conversation!") 
   name=input("What is your name? ")
+  print("")
   one_or_two = random.randint(1,2)
   if name == "Alex":
     print("Hello Alex! That is my creator's name!") 
@@ -33,6 +34,27 @@ def main():
     print("Hello "+ name + "! I've never met someone with that name before!")  
   else:
     print("Hello "+ name + "! One of my best friends has that name!")
+
+  age = int(input("Is there anything else about you I should know? Oh, how about your age? How old are you? "))
+  print("")
+  if age < 16: 
+    print("Awesome! I miss the days when I was your age...")
+  elif age >= 16 and age < 21:
+    print("Well into Highschool I see. Fun times, fun times...")
+  else:
+    print("You are old enough to drink. Make sure to always drink responsibly and never drink and drive!")
+
+  hru = input("Anyways, how are you today? Good, bad, meh? ")
+  print("")
+  if hru == "Good":
+    print("I'm happy to hear that! I am doing well too.")
+  elif hru == "Bad":
+    print("Oh, I'm sorry. Make sure to always reach out to those around you if you need help!")
+  elif hru == "Meh":
+    print("I can understand that. Sometimes life is just life, nothing particularly good or bad about it.")
+  else:
+    print("I don't understand that emotion, but hopefully it is good!")
+  
 
 if __name__ == "__main__":
   main()
