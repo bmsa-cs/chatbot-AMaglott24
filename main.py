@@ -54,8 +54,22 @@ def main():
     print("I can understand that. Sometimes life is just life, nothing particularly good or bad about it.")
   else:
     print("I don't understand that emotion, but hopefully it is good!")
-  
-
+  shows=input("Have you been enjoying any good shows lately? If so, what show? ")
+  print("")
+  if shows == "The Mandalorian":
+    print("That's cool, I've been enjoying that too!")
+  elif shows == "no":
+    print("Oh, ok. Not everyone enjoys TV shows!")
+  else:
+    showchoice = random.randint(1,4)
+    if showchoice == 1:
+      showchoice = "Wanda Vision"
+    elif showchoice == 2:
+      showchoice = "The Office"
+    else:
+      showchoice = "The Mandalorian" 
+    print("Awesome! I have been enjoying " +showchoice+ " lately.")
+    
 if __name__ == "__main__":
   main()
   t = input("Run pytest? (y/n)").lower()
