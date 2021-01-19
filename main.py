@@ -23,9 +23,16 @@ def run_tests():
   os.system(command)
 
 def main():
-  """This function contains all code for the chatbot."""
-  print("Hello!")
-
+  
+  print("Hello! I am Chadbot, a chatbot for short conversation!") 
+  name=input("What is your name? ")
+  one_or_two = random.randint(1,2)
+  if name == "Alex":
+    print("Hello Alex! That is my creator's name!") 
+  elif one_or_two == 1:
+    print("Hello "+ name + "! I've never met someone with that name before!")  
+  else:
+    print("Hello "+ name + "! One of my best friends has that name!")
 
 if __name__ == "__main__":
   main()
